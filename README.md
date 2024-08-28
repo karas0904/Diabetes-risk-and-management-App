@@ -1,16 +1,2 @@
-# diabeets_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Diabetes-risk-and-management-App
+This project integrates Flutter for app development and machine learning for providing personalized insights into diabetes management. The app offers features such as health tracking, medication reminders, and nutritional analysis, combined with ML-powered predictions to help users better manage their diabetes.
