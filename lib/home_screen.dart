@@ -1,26 +1,55 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class Homescreen extends StatefulWidget {
+  const Homescreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<Homescreen> createState() => _HomescreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomescreenState extends State<Homescreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Welcome vishal'),
+      body: Padding(
+        padding: const EdgeInsets.all(30.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Spacer to push content down and avoid overflow
+            SizedBox(height: 30.0), // Reduced height
+
+            // First Container (Shorter)
+            Container(
+              height: 100.0, // Adjust height as needed
+              color: Colors.grey[200], // Light white color
+              margin: const EdgeInsets.only(
+                  bottom: 8.0), // Reduced space between containers
+            ),
+            // Second Container (Taller)
+            Container(
+              height: 150.0, // Adjust height as needed
+              color: Colors.grey[300], // Light white color
+              margin: const EdgeInsets.only(
+                  bottom: 8.0), // Reduced space between containers and boxes
+            ),
+          ],
+        ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'HOME'),
-          BottomNavigationBarItem(icon: Icon(Icons.article), label: 'Artical'),
-          BottomNavigationBarItem(icon: Icon(Icons.report), label: 'reports'),
-          BottomNavigationBarItem(icon: Icon(Icons.man), label: 'profile'),
-        ],
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Add your action here
+        },
+        child: Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
+        backgroundColor: Colors.black, // Custom background color
+        elevation: 10.0, // Custom elevation
+        shape: RoundedRectangleBorder(
+          // Custom shape
+          borderRadius: BorderRadius.circular(100.0),
+        ),
       ),
     );
   }

@@ -1,5 +1,5 @@
+import 'package:diabeets_app/bottom_navigation.dart';
 import 'package:flutter/material.dart';
-import 'package:diabeets_app/home_screen.dart';
 
 class GestationalDiabetesInfoPage extends StatelessWidget {
   @override
@@ -43,7 +43,7 @@ class GestationalDiabetesInfoPage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => HomeScreen(),
+                        builder: (context) => BottomNavigationBarExample(),
                       ));
                 },
               ),
