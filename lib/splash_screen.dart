@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:lottie/lottie.dart';
-import 'package:shared_preferences/shared_preferences.dart'; // If needed
-import 'one_time_screen.dart';
-import 'home_screen.dart';
+import 'package:lottie/lottie.dart'; // If needed
+import 'firsttimescreens/one_time_screen.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
